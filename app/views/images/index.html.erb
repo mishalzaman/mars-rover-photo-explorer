@@ -1,0 +1,36 @@
+<!-- <div class="col-sm-12 heading">
+	<h1>Mars Rover Image Explorer</h1>
+</div> -->
+
+<%= form_for :image, :html => {:class => "col-sm-3 image_query"}, :remote => true do |f| %>
+	<h1>Mars Rover</h1>
+	<p>Photo Explorer</p>
+
+	<!-- sol -->
+	<div class="form-group col-sm-12">
+		<%= f.label :sol, class: "control-label" %>
+		<%= f.text_field :sol, class: "form-control" %>
+	</div>
+
+	<!-- rover -->
+ 	<div class="form-group col-sm-12">
+		<%= f.label :rover, class: "control-label" %>
+		<%= f.select(:rover, options_for_select([
+			['Curiosity', 'curiosity'], 
+			['Opportunity', 'opportunity'], 
+			['Spirit', 'spirit']
+			]), {}, {class: "form-control rover-select"}) %>
+	</div> 
+
+	<!-- camera -->
+	<div class="form-group col-sm-12 camera">
+		<%= f.label :camera, class: "control-label" %>
+		<%= f.select(:camera, options_for_select([]), {}, {class: "form-control", input: 'disabled'}) %>
+	</div>
+
+	<div class="col-sm-12 form-group">
+		<%= f.submit "Search", class: "col-sm-6 btn btn-primary submit-search" %>
+	</div>
+<% end %>
+
+<div class="col-sm-9 images"></div>

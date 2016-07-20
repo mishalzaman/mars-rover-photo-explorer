@@ -1,0 +1,29 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.image_query {
+	border-right: 1px dotted #ccc;
+
+	h1 {
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+	}
+}
+
+
+.images {
+	margin-top: 16px;
+
+	p {
+		margin-left :10px;
+	}
+}
+
+.image {
+	padding: 10px;
+	float: left;
+}
