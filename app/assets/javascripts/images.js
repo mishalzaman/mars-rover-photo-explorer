@@ -69,7 +69,7 @@ $(document).ready(function(){
 			if (data[i].camera_name == camera || camera == 'all') {
 				$img = '<div class="image"><img src="' + data[i].img_src + '" alt="" width="200" height="200" class="img-rounded"></div>';
 				$images.append($img);
-				counter++
+				counter++;
 			}
 		}
 
