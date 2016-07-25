@@ -1,6 +1,6 @@
 ### Mars Rover Image Explorer
 
-Practising to learn RUby On Rails by creating this little app that retrieves images from one of three Mars Rovers
+Practising to learn Ruby On Rails by creating this little app that retrieves images from one of three Mars Rovers
 
 Ruby version: 2.3.1
 
