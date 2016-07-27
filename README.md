@@ -9,6 +9,8 @@ Practising to learn Ruby On Rails by creating this little app that retrieves ima
 - Opportunity
 - Spirit
 
+Uses NASA's [Rover API](https://api.nasa.gov/api.html#MarsPhotos). They also have a bunch of other really cool APIs!
+
 ## Setup
 
 Run the migration script
