@@ -11,11 +11,11 @@ Practising to learn Ruby On Rails by creating this little app that retrieves ima
 
 ## Setup
 
-1. Migrate
+Run the migration script
 
     rake db:migrate
     
-2. Start server
+Start server
 
     bin/rails server
 
