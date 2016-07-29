@@ -16,7 +16,7 @@ Uses
 
 ## Setup
 
-Run the migration script
+Cd in to repository, then run the migration script
 
     rake db:migrate
     
