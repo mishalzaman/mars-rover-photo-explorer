@@ -76,7 +76,7 @@ $(document).ready(function(){
 		if(counter > 0) {
 			$images.find('p').append('Found ' + counter + ' images/s ');
 			if(retrieval != ""){
-				$images.find('p').append('which were retrieved photos from the ' + retrieval);
+				$images.find('p').append('which were retrieved from the ' + retrieval);
 			}
 			
 		} else {
