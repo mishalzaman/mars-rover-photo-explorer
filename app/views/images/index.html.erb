@@ -1,11 +1,11 @@
 <%= form_for :image, :html => {:class => "col-sm-3 image_query"}, :remote => true do |f| %>
 	<h1>Mars Rover</h1>
-	<p>Photo Explorer</p>
+	<p>View images from any of the three rovers currently prowling the surface of Mars.<p>
 
 	<!-- sol -->
 	<div class="form-group col-sm-12">
-		<%= f.label :sol, class: "control-label" %>
-		<%= f.text_field :sol, class: "form-control" %>
+		<%= f.label :sol, "Sol (integer value)", class: "control-label" %>
+		<%= f.text_field :sol, :value => 1400, class: "form-control" %>
 	</div>
 
 	<!-- rover -->
@@ -27,6 +27,8 @@
 	<div class="col-sm-12 form-group">
 		<%= f.submit "Search", class: "col-sm-6 btn btn-primary submit-search" %>
 	</div>
+
+	<p>You can read up about these sole explorers at these Wikipedia articles: <a href="https://en.wikipedia.org/wiki/Opportunity_(rover)" target="_blank">Opportunity</a>, <a href="https://en.wikipedia.org/wiki/Curiosity_(rover)" target="_blank">Curiosity</a> and <a href="https://en.wikipedia.org/wiki/Spirit_(rover)" target="_blank">Spirit</a>
 <% end %>
 
 <div class="col-sm-9 images"></div>
