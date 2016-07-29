@@ -2,11 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	color: #540804;
+}
+
 .image_query {
-	border-right: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 20px;
 
 	h1 {
 		text-align: center;
+		color: #540804;
 	}
 
 	p {
@@ -20,6 +26,7 @@
 
 	p {
 		margin-left :10px;
+		font-size: 18px;
 	}
 }
 

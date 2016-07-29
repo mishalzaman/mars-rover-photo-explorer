@@ -45,7 +45,7 @@ $(document).ready(function(){
 	$('form.image_query')
 		.on('ajax:success', function(e, data, status, xhr) {
 			if(data.result == true) {
-				display_images(data.images);
+				display_images(data.images, data.retrieval);
 			} else {
 				$images.empty();
 				$images.append('<p>Could not find any images</p>');
@@ -58,7 +58,7 @@ $(document).ready(function(){
 		});
 
 	// Display images from AJAX request
-	function display_images(data) {
+	function display_images(data, retrieval) {
 		var counter = 0;
 		var camera = $('#image_camera').val();
 
@@ -74,10 +74,16 @@ $(document).ready(function(){
 		}
 
 		if(counter > 0) {
-			$images.find('p').html('Found ' + counter + ' images for camera with filter: <strong>' + camera + '</strong>');
+			$images.find('p').append('Found ' + counter + ' images/s ');
+			if(retrieval != ""){
+				$images.find('p').append('which were retrieved photos from the ' + retrieval);
+			}
+			
 		} else {
 			$images.find('p').html('Did not find any images for filter: <strong>' + camera + '</strong>');
 		}
+
+		console.log(retrieval)
 	}
 
 	// Build select box for selected Rover's cameras
