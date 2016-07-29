@@ -1,7 +1,4 @@
 
-Ruby version: 2.3.1,
-Postgres
-
 # Mars Rover Image Explorer
 
 Practising to learn Ruby On Rails by creating this little app that retrieves images from one of three Mars Rovers:
