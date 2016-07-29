@@ -23,6 +23,6 @@ Start server
 
 Once the server has been activated, you can go to
 
-    http://localhost:3000/images
+    http://localhost:3000
     
 Images are queried by entering a sol date (an integer value for X number of days on Mars) and a Rover.
