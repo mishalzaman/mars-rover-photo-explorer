@@ -9,10 +9,12 @@ Practising to learn Ruby On Rails by creating this little app that retrieves ima
 - Opportunity
 - Spirit
 
-Uses
+Requirements
 - Ruby version v2.3.1 (setup using [rbenv](https://github.com/rbenv/rbenv))
 - Ruby on Rails v4.2.6
 - Postgres v9.5.3
+
+Uses
 - NASA's [Rover API](https://api.nasa.gov/api.html#MarsPhotos). They also have a bunch of other really cool APIs!
 
 ## Setup
